@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 380px;
+    margin: 0 auto;
+}
+input, button{
+    font-size: 24px;
+    padding: 20px;
+    background: rgb(173, 216, 230);
+    border: 2px solid #000;
+    border-radius: 7px;
+    
+}
+button{
+    
+    color: #fff;
+}
+
+button:hover{
+    background: #fff;
+    color: #000;
+    transition: 0.5s ease-out;
+}
+.calcBody{
+    width: 300px;
+    margin: 50px auto;
+    padding: 5px;
+    background: rgb(28, 37, 107);
+}
+.Display{
+    border: 2px solid;  
+}
+.Display input{
+    padding: 20px;
+    width: 100%;
+    background: rgb(211, 211, 211);
+    text-align: right;
+    font-size: 28px;
+}
+
+.calcButton{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "CancArea CancArea BackArea DivArea"
+                         "NumberArea NumberArea NumberArea ForArea "
+                         "NumberArea NumberArea NumberArea MinArea"
+                         "NumberArea NumberArea NumberArea PlusArea"
+                         "DotArea ZeroArea EqualArea EqualArea";
+    border: 2px solid;                      
+}
+.btnN-0{
+    grid-area: ZeroArea;
+}
+.Equal-btnCalc{
+    grid-area: EqualArea;
+    background: #BB290F;
+}
+.btnCalcBack{
+    grid-area: BackArea;
+    background: #BB290F;
+}
+.btnCalcPlus{
+    grid-area: PlusArea;
+    background: #BB290F;
+}
+.btnCalcMin{
+    grid-area: MinArea;
+    background: #BB290F;
+
+}
+.btnCalcDiv{
+    grid-area: DivArea;
+    background: #BB290F;
+}
+.btnCalcFor{
+    grid-area: ForArea;
+    background: #BB290F;
+    
+}
+.btnCalcAC{
+    grid-area: CancArea;
+    background: #BB290F;
+}
+.btnCalcDot{
+    grid-area: DotArea;
+    background: #BB290F;
+}
+.btnCalcFor{
+    grid-area: ForArea;
+}
