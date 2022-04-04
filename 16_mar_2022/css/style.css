@@ -1,0 +1,182 @@
+
+@import url(//db.onlinewebfonts.com/c/b3c9d20a4fb0f2486cd52a47762f30eb?family=Death+Star);
+/*Impor Death Face Font Family*/
+@font-face {
+    font-family: "Death Star"; src: url("//db.onlinewebfonts.com/t/b3c9d20a4fb0f2486cd52a47762f30eb.eot"); 
+    src: url("//db.onlinewebfonts.com/t/b3c9d20a4fb0f2486cd52a47762f30eb.eot?#iefix") format("embedded-opentype"), 
+         url("//db.onlinewebfonts.com/t/b3c9d20a4fb0f2486cd52a47762f30eb.woff2") format("woff2"), 
+         url("//db.onlinewebfonts.com/t/b3c9d20a4fb0f2486cd52a47762f30eb.woff") format("woff"), 
+         url("//db.onlinewebfonts.com/t/b3c9d20a4fb0f2486cd52a47762f30eb.ttf") format("truetype"), 
+         url("//db.onlinewebfonts.com/t/b3c9d20a4fb0f2486cd52a47762f30eb.svg#Death Star") format("svg"); 
+}
+/*Global style*/
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: 700;
+    background: url("https://uhdwallpapers.org/uploads/converted/19/01/13/storm-trooper-from-starwars-1920x1080_949965-mm-90.jpg");
+    background-repeat: no-repeat;
+    background-size: auto; 
+    background-attachment: fixed;
+}
+/*Body Elements Style*/
+div{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+hr{
+    width: 100%;
+    border-color: rgb(255, 255, 255);
+    margin: 20px 0 10px;
+}
+.divisor{
+    margin: 0px 0 10px;
+    border-color: rgb(0, 0, 0);
+}
+/*TEXT AREA STYLE*/
+textarea{
+    display: block;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px auto;
+    min-height: 100px;
+    
+}
+/*Button & Link Style*/
+.button{
+    display: inline-block;
+    margin: 0px auto;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    color: rgb(255, 232, 31);
+    background: rgb(0, 0, 0);
+    border: 1px rgb(255, 232, 31) solid;
+    transition: all 0.3s ease-out;
+}
+.randomPhoto{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+}
+.button:hover{
+    background: rgb(255, 232, 31);
+    color: rgb(0, 0, 0);
+    border: 1px rgb(0, 0, 0) solid;
+}
+/*Sicky Element Style*/
+#target{
+    width: 50%;
+    transform: translate(+75% , +50%);
+}
+/* TEXT  STYLE*/
+.design{
+    font-family: "Death Star";
+    padding: 10px;
+    color: rgb(255, 232, 31);
+    letter-spacing: 5px;
+    text-shadow: 2px  2px rgb(0, 0, 0),
+                -2px -2px rgb(0, 0, 0),
+                 2px -2px rgb(0, 0, 0),
+                -2px  2px rgb(0, 0, 0);
+}
+/*Section Style*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    margin-top: -5%;
+    width: 50%;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px rgb(255, 232, 31) solid;
+}
+/*Random TextArea Generator*/
+#quotesList{
+    width: 350px;
+    border: 2px solid;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+/*Comments Style*/
+.boxCardComments{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 10px auto;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+}
+label{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    
+}
+input{
+    width:100%;
+    border: none;
+    outline: none;
+    padding: 5px 5px;
+}
+.nameForm, .emailForm{
+    flex: 0 0 50%;
+    
+}
+.imgForm{
+    flex: 0 0 100%;
+}
+#input{
+    flex: 0 0 100%;
+    padding: 10px;
+}
+#submit{
+    flex: 0 0 100%;
+}
+/*Javascript Comments Style*/
+#comments {
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+#comments img{
+    display: inline-block;
+    border: 1px rgb(255, 232, 31) solid;
+}
+#comments h3{
+    line-height: 30px;
+}
+#comments h4 {
+    font-size: 12px;
+    line-height: 22px;
+
+}
+#comments p{
+    overflow:hidden; 
+    font: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+#comments .userID{
+    width: 50%;
+    transform: translate(-25%, -50%);
+    padding: 0px 0 20px;
+}
+#comments .userComm{
+    width: 100%;
+}
+
+
+
+

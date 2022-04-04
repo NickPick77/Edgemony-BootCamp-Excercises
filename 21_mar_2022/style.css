@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*font-family: 'Dosis', sans-serif;
+font-family: 'Hurricane', cursive;*/
+body{
+    font-family: "dosis", sans-serif;
+    line-height: 36px;
+    text-align: center;
+    background: rgba(255, 254, 239, 1);
+}
+div{
+    border: 4px #734222 solid;
+    border-radius: 16px;
+}
+h1{
+    font-size: 58px;
+    color: #474a51;
+    line-height: 44px;
+    margin: 5vh 0 8vh;
+    font-family: "Hurricane", cursive; 
+}
+h4{
+    font-weight: normal;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    cursor: pointer;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 20px;
+}
+.add-contact-container{
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.name-label, .surname-label{
+    flex: 0 0 50%;
+    order: 0;
+    font-size: 18px;
+}
+.surname-label{
+    order: 0;
+}
+.number-label{
+    flex: 0 0 100%;
+    order: 3;
+    font-size: 18px;
+}
+
+#name, #surname{
+    width: 30vh;
+    margin: auto;
+    order: 1;
+    padding: 4px;
+    
+}
+#surname{
+    order: 2;
+}
+#number{
+    width: 50vh;
+    margin: 0 auto;
+    padding: 4px;
+    order: 3;
+}
+#addBtn{
+    order: 4;
+    flex: 0 0 50%;
+    padding: 2vh;
+    margin: 2vh;
+    border: 2px #e1cdb3 solid;
+    border-radius: 8px;
+    
+}
+.src-contact-container{
+    flex: 0 1 40%;
+    order: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.src-contact-container > label{
+    flex: 1 0 100%;
+    font-size: 18px;
+    order: 0;
+}
+.src-contact-container > input{
+    flex: 1 0 100%;
+    max-width: 80%;
+    padding: 6px 5px;
+    order: 1;
+    
+}
+.src-contact-container > button{
+    flex: 0 0 50%;
+    order: 2;
+    padding: 2vh;
+    margin: 4vh;
+    border: 2px #e1cdb3 solid;
+    border-radius: 8px;
+}
+.contact-list-container{
+    flex: 0 0 95%;
+    margin-top: 10vh;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    flex: 0 0 25%;
+    padding: 20px;
+    margin: 20px;
+    border: 2px #e1cdb3 solid;
+    border-radius: 16px;
+}
+
+@media all and (max-width: 490px) {
+
+    .surname-label{
+        order: 2;
+    }
+    
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Personaggi Film</title>
+</head>
+<body>
+    <h1>Personaggi dei Film</h1>
+    <div class="section">
+        <div id="addCharacter">
+            <h3>Aggiungi un nuovo personaggio</h3>
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name">
+            <label for="universe">Universo</label>
+            <input type="text" name="universe" id="universe">
+            <button id="addBTN">Aggiungi personaggio</button>
+        </div>
+        <div id="srcCharacter">
+            <label for="src">Cerca tra i personaggi</label>
+            <input type="text" name="src" id="srcInput-box" placeholder="Es: Luke Skywalker">
+            <button id="srcBTN">Cerca</button>
+        </div>
+        <div id="characterList">
+            <ul id="characterContainer"></ul>
+        </div>
+    </div>   
+
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

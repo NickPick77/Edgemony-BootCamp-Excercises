@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/b3c9d20a4fb0f2486cd52a47762f30eb?family=Death+Star" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Star Wars Random Quotes Generator</title>
+</head>
+<body>
+    <div class="section">
+            <div id="target">
+                <p id="randomPhoto">
+                    <a class="button" href="https://randomuser.me/photos" target="_blank ">Cerchi una foto profilo? <br>Clicca qui'</a>
+                </p>
+            </div>
+            <div class="container">
+                <div class="boxCardRandomize">
+                    <h1 class="design" id="start">Generatore di citazioni casuali di Star Wars</h1> 
+                    <h2 class="design">Premi il pulsante per generare una citazione!</h2>
+                    <textarea id="quotesList" readonly></textarea>
+                    <button class="button">RANDOMIZE</button>
+                    
+                </div>
+            <hr class="divisor">
+                <div class="boxCardComments">
+                    <h2 class="design">Lascia un commento</h2>
+                    <div class="nameForm">    
+                        <label for="nickName">Nome</label>
+                        <input type="design" name="nickName" id="nickName"/>
+                    </div>
+                    <div class="emailForm">
+                    <label for="userEmail">E-mail</label>
+                    <input type="email" name="userEmail" id="userEmail"/>
+                </div>
+                <div class="imgForm">    
+                    <label for="userImg">Avatar (inserisci l'Url della tua immagine)</label>
+                    <input type="url" name="userImg" id="userImg" placeholder="Es: https://../.jpg"></input>
+                </div>
+                <textarea id="input" placeholder="inserisci quì il tuo commento"></textarea>
+                <button class="button" id="submit">INVIA COMMENTO</button>
+            <hr>
+                <ul id="comments">
+                   
+                </ul>
+            </div>          
+        </div>
+    </div>
+    <script src="./javascript/ScrollMagic.js"></script>
+    <script src="./javascript/script.js"></script>
+    
+</body>
+</html>

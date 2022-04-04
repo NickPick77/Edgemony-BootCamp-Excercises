@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Send+Flowers&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  border-left: 5px rgba(230, 198, 25, 1) solid;
+  border-right: 5px rgba(230, 198, 25, 1) solid;
+  font-family: 'Lato', sans-serif;
+}
+hr {
+  overflow: visible; /* For IE */
+  width: 80vw;
+  margin: 0 auto;
+  height: 30px;
+  border-style: solid;
+  border-color: rgba(230, 198, 25, 1);
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr:before { /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: rgba(230, 198, 25, 1);
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+div {
+    width: 200px;
+    padding: 10px;
+}
+header{
+  background: rgb(172, 8, 19);
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: inset 0px -3px 10px 6px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+header > h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+header > h1::first-letter{
+  font-family: 'Send Flowers', cursive;
+  color: rgba(230, 198, 25, 1);
+}
+header > h1::after {
+  position: absolute;
+  top: 15px;
+  left: 110px;
+  font-family: 'Send Flowers', cursive;
+  color: rgba(230, 198, 25, 1);
+  
+  content: "BOOK";
+
+} 
+form {
+  flex: 1 0 50%;
+  padding: 2em 0;
+  gap: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  color: white;
+  }
+form > div{
+  flex: 0 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+form > label{
+  width: 300px;
+  text-align: center;
+  display: block;
+  line-height: 20px;
+}  
+form > input {
+    min-width: 300px;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+div > legend{
+  flex: 0 0 100%;
+  text-align: center;
+  line-height: 2rem;
+}
+
+div > input[type="checkbox"]{
+  min-width: 40px;
+}
+div > input[type="checkbox"]:checked::before{
+  position: relative;
+  content: ">";
+  color: blue;
+  font-weight: bold;
+}
+.modal-wrapper{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.modal-wrapper > .modal{
+  flex: 0 0 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0px 0px 24px 24px rgba(0, 0, 0, 0.92);
+  background: rgba(0, 0, 0, 0.90);
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  z-index: 3;
+}
+.modal > img {
+  flex: 0 0 450px;
+  max-height: 450px;
+  border-radius: 16px;
+  
+}
+.overlay{
+  background-color: #ffffff10;
+  backdrop-filter: blur(12px);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.show{
+  display: flex;
+}
+.header-hr{
+  width: 100%;
+}
+.header-hr::before{
+  content: none;
+}
+.add-film-container{
+  display: flex;
+  justify-content: center;
+}
+.check-label{
+  min-width: fit-content;
+}
+
+.movie-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px 0;
+} 
+
+.card{
+  display: flex;
+  flex: 0 0 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transition: all ease-out 0.3s; 
+  
+}
+.card:hover{
+  transform: scale(1.15);
+}
+.card > img {
+  flex: 1 0 350px;
+  max-height: 350px;
+  min-width: 250px;
+  object-fit: cover;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: 0 0 6px 2px #d6d1d141
+}
+.bckground {
+  width: 250px;
+  height: 130px;
+  position: absolute;
+  /*z-index: 1;*/
+  top: 230px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  background: rgba(46, 46, 46, 0.9);
+  backdrop-filter: blur(12px) contrast(100%);
+  padding: 0 10px;
+  line-height: 2rem;
+  text-shadow:  1px 1px rgba(0, 0, 0, 1),
+                -1px -1px rgba(0, 0, 0, 1),
+                -1px 1px rgba(0, 0, 0, 1),
+                1px -1px rgba(0, 0, 0, 1);
+}
+.bckground > h3 {
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+.bckground > p{
+  padding: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  font-size: 22px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  cursor: pointer;
+  left: 245px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.92);
+  border-radius: 36px;
+  padding: 3px;
+  animation: all 0.5s ease-out;
+  transition: 0.2s;
+}
+
+.material-icons-outlined:hover{
+  transform: scale(0.85);
+ } 
+#addSubmit{
+  cursor: pointer;
+  min-width: 120px;
+  margin: 15px 25% 0;
+  padding: 10px;
+  background: rgba(46, 46, 46, 0.9);
+  border: 2px rgba(230, 198, 25, 1) solid;
+  color: rgba(255, 255, 255, 1);
+  animation: all 0.5s ease-out;
+  transition: 0.5s;
+}
+#addSubmit:hover{
+  transform: scale(0.95);
+}
+#closeModalBtn{
+  left: 85%;
+}
+@media all and (max-width: 660px){
+
+  header > h1{
+    left: 35%;
+  }
+  .movie-wrapper{
+    justify-content: center;
+  }
+
+}

@@ -1,0 +1,15 @@
+.last{
+    display: none;
+}
+/*classi al click del bottone*/
+.change{
+    color: red;
+}
+
+.change .last{
+    display: block;
+}
+
+.change .first{
+    display: none;
+}

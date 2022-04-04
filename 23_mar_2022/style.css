@@ -1,0 +1,89 @@
+.cards-wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+h1{
+    position: relative;
+    top: 10%;
+}
+hr{
+    margin: 10px 0;
+}
+header > h2{
+    transform: translate(-5%, -25%);
+    font-size: 18px;
+    font-weight: lighter;
+}
+.card {
+        grid-template-rows: 90px 60px 200px 40px;
+        padding: 0px 10px;
+        width: 250px;
+        display: grid;
+        box-shadow: inset 1px 1px 5px #2a52be,
+        inset -1px -1px 5px #2a52be;
+        border: 2px solid #2a52be;
+        border-radius: 8px;
+        align-items: center;
+        cursor: pointer;r
+        
+    }
+.card > img {
+    width: 50%;
+    margin: 0 auto;
+}
+.title{
+    letter-spacing: 2px;
+    font-size: 24px;
+    transform: translate(-1%, 0);
+}
+.title::first-letter{
+    color: #2a52be;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 46px
+}
+.title::after{
+    position: absolute;
+    content: "OZIO";
+    color: #2a52be;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 72px;
+    font-weight: lighter;
+}
+
+@media all and (max-width: 860px){
+
+    header > h2{
+        transform: translate(-7%, -25%);
+        font-size: 18px;
+    }
+
+    .cards-wrapper{
+        grid-template-columns: auto auto;
+
+    }
+}
+
+@media all and (max-width: 660px){
+
+    header > h2{
+        transform: translate(-13%, -25%);
+        font-size: 18px;
+    }
+
+    .cards-wrapper{
+        grid-template-columns: auto;
+
+    }
+}
