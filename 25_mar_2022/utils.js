@@ -182,49 +182,83 @@ const createAddForm = () => {
 
 
 const createModal = (title, desc, imgUrl) => {
+        
         const divEl = create("div")
+                
                 divEl.classList.add("modal");
+        
         const titleEl = create("h1");
+                
                 titleEl.textContent = title
+        
         const descEl = create("p");
+                
                 descEl.textContent = desc
+        
         const imgEl = create("img");
+                
                 imgEl.setAttribute("src", imgUrl);
+                
                 imgEl.setAttribute("alt", "Movie poster")
+        
         const overlayDiv = create("div");
+                
                 overlayDiv.classList.add("overlay");
+        
         const closeBtnSpan = create("span");
+                
                 closeBtnSpan.classList.add("material-icons-outlined")
+                
                 closeBtnSpan.id = "closeModalBtn"
+                
                 closeBtnSpan.textContent = "close"
         
         divEl.append(imgEl, titleEl, descEl, closeBtnSpan)       
+        
         query(".modal-wrapper").append(divEl, overlayDiv);    
 }
 
 const openModal = () => {
-        const modalWrapperEl = query(".modal-wrapper");
-                modalWrapperEl.classList.toggle("show")
+        
+                const modalWrapperEl = query(".modal-wrapper");
+                
+                        modalWrapperEl.classList.toggle("show")
 
 }
 const closeModalOnCloseBtn = () => {
+        
         query("#closeModalBtn").addEventListener("click", () =>{
-        const modalWrapperEl = query(".modal-wrapper");
-                modalWrapperEl.classList.toggle("show");
+        
+                const modalWrapperEl = query(".modal-wrapper");
+        
+                        modalWrapperEl.classList.toggle("show");
+        
         const overlay = query(".overlay");
+        
         const modalEl = query(".modal");        
-       modalWrapperEl.removeChild(modalEl);
-       modalWrapperEl.removeChild(overlay);
+       
+        modalWrapperEl.removeChild(modalEl);
+       
+        modalWrapperEl.removeChild(overlay);
+       
         })
+
 }
 const closeModalOnOverlay = () => {
         query(".overlay").addEventListener("click", () =>{
-        const modalWrapperEl = query(".modal-wrapper");
-                modalWrapperEl.classList.toggle("show");
-        const overlay = query(".overlay");
-        const modalEl = query(".modal");        
-       modalWrapperEl.removeChild(modalEl);
-       modalWrapperEl.removeChild(overlay);
+
+                const modalWrapperEl = query(".modal-wrapper");
+                
+                        modalWrapperEl.classList.toggle("show");
+        
+                const overlay = query(".overlay");
+       
+                const modalEl = query(".modal");        
+       
+                modalWrapperEl.removeChild(modalEl);
+       
+                modalWrapperEl.removeChild(overlay);
+        
         })
 }
 
