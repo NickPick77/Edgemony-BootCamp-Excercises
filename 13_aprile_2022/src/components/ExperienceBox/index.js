@@ -1,9 +1,6 @@
 import './styles.css';
 
 export const ExperienceBox = (props) => {
-    const workExp = props.work;
-    const langExp = props.lang;
-    const hobbyExp = props.hobby;
     return (
         <section className='Experience-container'>
             <div>

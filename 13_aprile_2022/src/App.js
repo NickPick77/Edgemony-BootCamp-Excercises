@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Avatar } from './components/Avatar';
 import { Description } from './components/Description';
 import { ExperienceBox } from './components/ExperienceBox';

@@ -1,7 +1,6 @@
 import './styles.css';
 
 export const Description = (props) => {
-    const titleProps = props.title;
     return (
         <section className='Description-container'>
             <h2>{props.title}</h2>
