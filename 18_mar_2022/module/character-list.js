@@ -10,7 +10,10 @@ const people = [
   ];
 const render = () => {  
   charactersList.innerHTML = people.map((character) => character.split(" - "))
-                                  .map((character) => `<li id="card">${character[0]} ${character[1]}</li>`)
+                                  .map((character) => `<li id="card">
+                                                          <h2>${character[0]}</h2> 
+                                                          <h3>${character[1]}</h3>
+                                                        </li>`)
                                    .join("");
   //console.log(people, peopleID, peopleUniverse);                      
 }; 
