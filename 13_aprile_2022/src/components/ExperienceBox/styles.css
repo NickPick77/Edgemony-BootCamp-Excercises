@@ -1,0 +1,9 @@
+h2{
+    text-align: center;
+}
+.Experience-container{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    margin: 0 5vw;
+}

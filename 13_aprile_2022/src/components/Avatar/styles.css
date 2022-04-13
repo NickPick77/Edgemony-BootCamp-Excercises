@@ -1,0 +1,20 @@
+img{
+    border-radius: 100%;
+}
+
+.Avatar-container{
+    margin: 10px auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: fit-content;
+}
+.id-container > p{
+    font-weight: bold;
+    font-size: calc(12px + 1vmin);
+}
+.id-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
