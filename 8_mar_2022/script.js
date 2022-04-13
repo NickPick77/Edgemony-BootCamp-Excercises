@@ -1,10 +1,10 @@
-/*let firstFactor = parseInt(prompt("Inserisci il primo numero"));
+let firstFactor = parseInt(prompt("Inserisci il primo numero"));
 let operationChoice = prompt("Quale operazione vuoi svolgere? Inserisci '+ - / *'");
 let secondFactor = parseInt(prompt("Inserisci il secondo numero"));
 
 //IF ELSE
-/*
-if (operationChoice == "+") {
+
+/*if (operationChoice == "+") {
     alert(firstFactor + secondFactor);
 }
 else if(operationChoice == "-"){
