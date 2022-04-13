@@ -165,8 +165,8 @@ function RendToScreen(){
 };
 
 */
-const num == 0;
-const display == document.querySelector(.calcButton);
+const num = 0;
+const display = document.querySelector(".calcButton");
 
 
     
