@@ -28,25 +28,41 @@ let Contacts = [
 
 
 
-function addContacts(){
+function addContacts() {
+    
     let newContact = {
-    Name: prompt("Name"),
-    Surname: prompt("Surname"),
-    TelephonNumber: parseInt(prompt("Numero di Telefono")),
+    
+        Name: prompt("Name"),
+    
+        Surname: prompt("Surname"),
+    
+        TelephonNumber: parseInt(prompt("Numero di Telefono")),
 }
+    
     Contacts.push(newContact);
+
 }
+
 addContacts();
+
 //funziona male ma funziona!
+
 function removeContacts(){
+    
     const i = parseInt(prompt("quale numero vuoi cancellare?"))
+    
     Contacts.splice(i -1, 1);
 
 }
+
 removeContacts();
+
 console.log(Contacts);
 
 const contactListEL = document.querySelector(".contactList");
+
 for (index in Contacts){
+    
     contactListEL.children[index].textContent = Contacts [index].Name;
+
 }
