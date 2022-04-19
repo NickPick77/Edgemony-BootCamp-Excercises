@@ -1,6 +1,6 @@
-let firstFactor = parseInt(prompt("Inserisci il primo numero"));
-let operationChoice = prompt("Quale operazione vuoi svolgere? Inserisci '+ - / *'");
-let secondFactor = parseInt(prompt("Inserisci il secondo numero"));
+//let firstFactor = parseInt(prompt("Inserisci il primo numero"));
+//let operationChoice = prompt("Quale operazione vuoi svolgere? Inserisci '+ - / *'");
+//let secondFactor = parseInt(prompt("Inserisci il secondo numero"));
 
 //IF ELSE
 
@@ -165,8 +165,29 @@ function RendToScreen(){
 };
 
 */
-const num = 0;
-const display = document.querySelector(".calcButton");
+const display = document.querySelector(".display");
+const memory = [];
+const num = document.querySelectorAll("button")
+
+num.forEach((e) => {
+    e.addEventListener("click" , () => {
+        console.log(num, e.value, memory)
+        
+        switch (memory) {
+            case Number:
+              memory.push(e.value)  
+                
+                break;
+        
+            default:
+                break;
+        }
+        display.value = memory.join("");
+    });
+
+})
+
+
 
 
     
