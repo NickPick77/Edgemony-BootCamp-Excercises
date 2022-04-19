@@ -1,0 +1,11 @@
+.selector-container{
+    display: grid;
+    justify-content: center;
+    margin: 20px auto;
+   
+}
+.cities-selector{
+    width: 30vw;
+    padding: 10px 5px;
+    font-size: calc(0.7rem + 1vmin);
+}
