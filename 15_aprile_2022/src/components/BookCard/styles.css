@@ -1,0 +1,73 @@
+.book-card-container {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px #000000;
+}
+
+.book-card-container img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.book-card-container .info-container {
+    height: 250px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    top: -20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-card-container .info-container .title {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.book-card-container .info-container .desc {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.book-card-container .info-container .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.book-card-container .info-container .btn p {
+    text-align: center;
+    color: white;
+    background: #000;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn{
+    text-align: center;
+    color: white;
+    background: #000;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.book-card-container .info-container .btn p:active {
+    background: white;
+    color: #000;
+}
