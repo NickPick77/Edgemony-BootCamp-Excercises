@@ -19,4 +19,3 @@
 
 [Movie List from API call](https://nickpick77.github.io/Edgemony-BootCamp-Excercises/25_mar_2022)
 
-[CurriculumVitae made with React](https://nickpick77.github.io/Edgemony-BootCamp-Excercises/13_aprile_2022)
